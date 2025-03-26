@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 10</title>
+</head>
+<body>
+    <button id="PesoIdeal">Calcular Peso</button>
+  
+
+    <script>
+        document.getElementById("PesoIdeal").onclick = function() {
+            let altura = parseFloat(prompt("Informe a sua altura (em metros):"));
+            let genero = parseInt(prompt("Informe seu gênero (1: feminino, 2: masculino):"));
+
+            let pesoIdeal;
+
+            if (genero === 1) {
+                pesoIdeal = 62.1 * altura - 44.7; 
+            } else if (genero === 2) {
+                pesoIdeal = 72.7 * altura - 58; 
+            } else {
+                alert("Gênero inválido! Por favor, insira 1 ou 2.");
+                return;
+            }
+
+            alert("Seu peso ideal é " + pesoIdeal.toFixed(2) + " kg.");
+        };
+    </script>
+</body>
+</html>

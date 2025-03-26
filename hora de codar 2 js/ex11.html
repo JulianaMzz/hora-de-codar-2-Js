@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 11</title>
+</head>
+<body>
+    <button id="calculadora">Calculadora</button>
+    
+    <script>
+        document.getElementById("calculadora").onclick = function() {
+            let valor1 = parseInt(prompt("Informe o primeiro valor:"));
+            let valor2 = parseInt(prompt("Informe o segundo valor:"));
+            let operacao = parseInt(prompt("Escolha a operação: 1 - Adição, 2 - Subtração, 3 - Divisão, 4 - Multiplicação"));
+
+            let resultado;
+
+            switch (operacao) {
+                case 1:
+                    resultado = valor1 + valor2;
+                    alert("Resultado da adição: " + resultado);
+                    break;
+                case 2:
+                    resultado = valor1 - valor2;
+                    alert("Resultado da subtração: " + resultado);
+                    break;
+                case 3:
+                    if (valor2 === 0) {
+                        alert("Erro: divisão por zero não permitida.");
+                    } else {
+                        resultado = valor1 / valor2;
+                        alert("Resultado da divisão: " + resultado);
+                    }
+                    break;
+                case 4:
+                    resultado = valor1 * valor2;
+                    alert("Resultado da multiplicação: " + resultado);
+                    break;
+                default:
+                    alert("Operação inválida! Escolha uma operação entre 1 e 4.");
+            }
+        };
+    </script>
+</body>
+</html>

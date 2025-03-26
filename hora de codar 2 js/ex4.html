@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 4</title>
+</head>
+<body>
+    <script>
+        let val1 = parseFloat(prompt("Digite o primeiro número:"));
+        let val2 = parseFloat(prompt("Digite o segundo número:"));
+        let val3 = parseFloat(prompt("Digite o terceiro número:"));
+        
+        let maior, maior2;
+        
+        
+        if (val1 > val2 && val1 > val3) {
+            maior = val1;
+            maior2 = (val2 > val3) ? val2 : val3;
+        } else if (val2 > val1 && val2 > val3) {
+            maior = val2;
+            maior2 = (val1 > val3) ? val1 : val3;
+        } else {
+            maior = val3;
+            maior2 = (val1 > val2) ? val1 : val2;
+        }
+        
+        
+        let soma = maior + maior2;
+        alert(`A soma dos dois maiores números é: ${soma}`);
+    </script>
+</body>
+</html>

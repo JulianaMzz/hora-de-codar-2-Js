@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 8</title>
+</head>
+<body>
+    <script>
+        m1 = parseFloat(prompt("Digite o 1 valor:"))
+        m2 = parseFloat(prompt("Digite o 2 valor:"))
+        m3 = parseFloat(prompt("Digite o 3 valor:"))
+        m4 = parseFloat(prompt("Digite o 4 valor:"))
+
+       if (m1 > 0 && m1 < 10 && m2 > 0 && m2 < 10 && m3 > 0 && m3 < 10 && m4 > 0 && m4 < 10){
+        let media = (m1 + m2 + m3 + m4) / 4
+
+        if (media > 5){
+            alert(`Você passou no teste`)
+        } else {
+            alert(`Tente novamente!`)
+        }
+       }
+    </script>
+</body>
+</html>

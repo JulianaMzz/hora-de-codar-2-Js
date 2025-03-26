@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 9</title>
+</head>
+<body>
+    <script>
+        let ano = parseFloat(prompt("Qual ano você nasceu:"))
+
+        let anoAtual = new Date().getFullYear()
+        let idade = anoAtual - ano
+
+        if (idade >= 16){
+            alert("Você pode votar esse ano")
+        } else {
+            alert("Você não pode votar esse ano")
+        }
+    </script>
+</body>
+</html>
